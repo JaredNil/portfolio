@@ -15,13 +15,16 @@ body {
     min-height: 100vh;
 }
 
-/* 
-.app_modal {
-    font: var(--font-m);
-    color: var(--primary-color);
-} */
+.page-wrapper {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 main.content {
     display: flex;
+    justify-content: center;
 }

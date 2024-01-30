@@ -7,13 +7,7 @@ import cls from './Navbar.module.scss';
 
 import Separator from '../assets/slash.svg';
 
-interface NavbarProps {
-	className?: string;
-}
-
-export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
-	const { className } = props;
-
+export const Navbar: React.FC = () => {
 	return (
 		<div className={cls.navbar__wrapper}>
 			<nav className={cls.navbar}>
@@ -49,6 +43,9 @@ export const Navbar: React.FC<NavbarProps> = (props: NavbarProps) => {
 					</li>
 				</ul>
 				<div className={cls.navbar__links}>
+					<div className={cls.navbar__link_ln}>
+						EN
+					</div>
 					<Link
 						className={
 							cls.navbar__link_gh
