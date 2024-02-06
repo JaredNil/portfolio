@@ -7,7 +7,12 @@ import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
 import { type BuildOptions } from './types/config';
 
-export function buildPlugins({ apiUrl, paths, isDev, project }: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({
+	apiUrl,
+	paths,
+	isDev,
+	project,
+}: BuildOptions): webpack.WebpackPluginInstance[] {
 	const plugins = [
 		new HtmlWebpackPlugin({
 			template: paths.html,
